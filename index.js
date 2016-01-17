@@ -13,12 +13,25 @@ exports.dummy = dummy;
 
 
 var ui = require("sdk/ui");
+var contextMenu = require("sdk/context-menu");
 
 var action_button = ui.ActionButton({
+  id: 'temporary-poseidon-actionbutton',
   label: "Temporary Poseidon",
-  icon: "./Tango_conical_flask_green.png",
+  icon: self.data.url("Tango_conical_flask_green.png"),
   onClick: function(state) {
     console.log("You clicked '" + state.label + "'");
   }
 });
 
+var context_menu_script = '' +
+  'self.on("click", function (node, data) {' +
+  '  console.log("Item clicked!");' +
+  '});'
+var menuItem = contextMenu.Item({
+  label: "Temporary Poseidon",
+  image: self.data.url("Tango_conical_flask_green.png"),
+  accessKey: "e",
+  context: contextMenu.PageContext(),
+  contentScript: context_menu_script
+});
