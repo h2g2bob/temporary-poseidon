@@ -15,8 +15,7 @@ exports.dummy = dummy;
 var ui = require("sdk/ui");
 
 var action_button = ui.ActionButton({
-  id: "my-button",
-  label: "Action Button!",
+  label: "Temporary Poseidon",
   icon: "./Tango_conical_flask_green.png",
   onClick: function(state) {
     console.log("You clicked '" + state.label + "'");
