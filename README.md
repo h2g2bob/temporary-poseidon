@@ -3,3 +3,8 @@ which means using [jpm](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jp
 to do the building.
 
 This test extenstion will add a toolbar button using the high-level apis.
+
+```
+ln -s ./node_modules/.bin/jpm
+./jpm run -b ~/code/firefox/firefox
+```

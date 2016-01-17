@@ -1,0 +1,16 @@
+{
+  "title": "Toolbutton NodeJS",
+  "name": "toolbutton-nodejs",
+  "version": "0.0.1",
+  "description": "A test for high-level apis",
+  "main": "index.js",
+  "author": "h2g2bob",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "AGPL",
+  "keywords": [
+    "jetpack"
+  ]
+}
